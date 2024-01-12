@@ -1,0 +1,10 @@
+services:
+  vue:
+    build:
+      dockerfile: Dockerfile
+    working_dir: /app/
+    command: "npm run dev"
+    volumes:
+      - .:/app/
+    ports:
+      - "5173:5173"
